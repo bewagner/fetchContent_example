@@ -11,10 +11,18 @@ branches:
     only: 
     - /.*/
 
-before_script:
-    - ./install_cmake.sh
+install:
+    # Install CMake 3.17
+    - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
+    - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
+    - travis_retry wget --no-check-certificate https://github.com/Kitware/CMake/releases/download/v3.17.2/cmake-3.17.2.tar.gz
+    - tar -xvf cmake-3.17.2.tar.gz > /dev/null
+    - mv cmake-3.17.2.tar.gz cmake-install
+    - PATH=${DEPS_DIR}/cmake-install:${DEPS_DIR}/cmake-install/bin:$PATH
+    - cd ${TRAVIS_BUILD_DIR}
+
 script:
     - mkdir build && cd build
-    - /usr/local/bin/cmake ..
-    - /usr/local/bin/cmake --build  .
+    - cmake ..
+    - cmake --build  .
     - fetchContent_example
