@@ -23,6 +23,6 @@ install:
 
 script:
     - mkdir build && cd build
-    - cmake ..
-    - cmake --build  .
+    - ${DEPS_DIR}/cmake-install/bin/cmake ..
+    - ${DEPS_DIR}/cmake-install/bin/cmake --build  .
     - fetchContent_example
