@@ -3,7 +3,7 @@
 #include <vector>
 #include "doctest/doctest.h"
 #include "range/v3/view.hpp"
-#include <range/v3/numeric/accumulate.hpp>
+#include "range/v3/numeric/accumulate.hpp"
 
 int sum_of_first_ten_squared(const std::vector<int> &v) {
     auto square = [](int i) -> int { return i * i; };
