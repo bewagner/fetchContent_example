@@ -11,8 +11,8 @@ branches:
     only: 
     - /.*/
 
-install:
-    - sudo ./install_cmake.sh
+before_script:
+    - ./install_cmake.sh
 script:
     - mkdir build && cd build
     - /usr/local/bin/cmake ..
