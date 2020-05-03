@@ -25,4 +25,4 @@ script:
     - mkdir build && cd build
     - ${DEPS_DIR}/cmake-install/bin/cmake ..
     - ${DEPS_DIR}/cmake-install/bin/cmake --build  .
-    - fetchContent_example
+    - ./fetchContent_example
