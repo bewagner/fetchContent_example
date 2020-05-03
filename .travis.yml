@@ -19,6 +19,7 @@ install:
     - cd CMake
     - ./bootstrap
     - make -j $(nproc) -l $(nproc)
+    - sudo make install
     - cd ..
 
 script:
