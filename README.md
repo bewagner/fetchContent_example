@@ -4,7 +4,7 @@
 
 Demonstration of how to use CMake's `FetchContent` to manage C++ dependencies.
 
-Also check out [my blog post]() on `FetchContent`!
+The application builds a sample program that makes use of [doctest](https://github.com/onqtam/doctest) and [range-v3](https://github.com/ericniebler/range-v3).
 
 ## Dependencies
 Make sure you have [CMake](https://github.com/Kitware/CMake) >= 3.14 installed. 
