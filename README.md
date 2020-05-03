@@ -4,6 +4,8 @@
 
 Demonstration of how to use CMake's `FetchContent` to manage C++ dependencies.
 
+Check out [my blog post](https://bewagner.github.io/programming/2020/05/02/cmake-fetchcontent/) about `FetchContent`!
+
 The application builds a sample program that makes use of [doctest](https://github.com/onqtam/doctest) and [range-v3](https://github.com/ericniebler/range-v3).
 
 ## Dependencies
