@@ -1,9 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
 project(fetchContent_example CXX)
 
-
 include(FetchContent)
-
 
 FetchContent_Declare(
         DocTest
@@ -15,7 +13,6 @@ FetchContent_Declare(
         GIT_REPOSITORY "https://github.com/ericniebler/range-v3"
         GIT_TAG "4d6a463bca51bc316f9b565edd94e82388206093"
 )
-
 
 FetchContent_MakeAvailable(DocTest Range-v3)
 

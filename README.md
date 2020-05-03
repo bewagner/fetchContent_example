@@ -1,4 +1,4 @@
-# fetchContent_example
+# FetchContent example
 
 [![Build Status](https://travis-ci.com/bewagner/fetchContent_example.svg?branch=master)](https://travis-ci.com/bewagner/fetchContent_example)
 
