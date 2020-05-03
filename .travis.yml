@@ -12,17 +12,9 @@ branches:
     - /.*/
 
 install:
-    # Install newest CMake version
-    # Install CMake's dependency
-    - sudo apt install libssl-dev
-    - git clone https://github.com/Kitware/CMake.git
-    - cd CMake
-    - ./bootstrap
-    - make -j $(nproc) -l $(nproc)
-    - sudo make install
-    - cd ..
-
+    - ./install_cmake.sh
 script:
     - mkdir build && cd build
-    - cmake ..
-    - cmake --build  . 
+    - /usr/local/bin/cmake ..
+    - /usr/local/bin/cmake --build  .
+    - fetchContent_example

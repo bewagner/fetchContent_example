@@ -31,6 +31,12 @@
 *.out
 *.app
 
+# Build folder
+build/
+
 # Clion files
 .idea/
 cmake-build-*/
+
+# Eventually CMake folder
+CMake/
