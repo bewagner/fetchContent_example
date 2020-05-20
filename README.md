@@ -1,6 +1,6 @@
 # FetchContent example
 
-[![Build Status](https://travis-ci.com/bewagner/fetchContent_example.svg?branch=master)](https://travis-ci.com/bewagner/fetchContent_example)
+![C/C++ CI](https://github.com/bewagner/fetchContent_example/workflows/C/C++%20CI/badge.svg?branch=master)
 
 Demonstration of how to use CMake's `FetchContent` to manage C++ dependencies.
 
