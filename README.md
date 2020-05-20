@@ -1,6 +1,6 @@
 # FetchContent example
 
-![C/C++ CI](https://github.com/bewagner/fetchContent_example/workflows/C/C++%20CI/badge.svg?branch=master)
+![Build](https://github.com/bewagner/fetchContent_example/workflows/C/C++%20CI/badge.svg?branch=master)
 
 Demonstration of how to use CMake's `FetchContent` to manage C++ dependencies.
 
